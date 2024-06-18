@@ -1,4 +1,4 @@
-from flask import Flask, render_template_string, redirect, url_for, jsonify
+from flask import Flask, render_template, redirect, url_for, jsonify, render_template_string
 import requests
 from requests.auth import HTTPBasicAuth
 import json
@@ -14,7 +14,9 @@ url = "http://207.180.219.163:65180/floristics/hs/Post/v1/GetAllItemsShopify"
 username = "web"
 password = "Ufpc4405"
 
-
+# Shopify API credentials
+shopify_store_url = "https://quickstart-da63505a.myshopify.com"
+access_token = "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"
 
 # Example payload (modify according to the API's requirements)
 payload = {}
@@ -220,7 +222,7 @@ def index():
             <button onclick="syncProducts()">Sync Products to Shopify</button>
             <div id="status"></div>
         </div>
-        <script>
+        <script> 
             function syncProducts() {
                 document.getElementById("status").innerHTML = '<img src="https://i.gifer.com/YCZH.gif" alt="Loading"/>';
                 fetch('/sync_products')
@@ -242,3 +244,4 @@ def index():
 
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0', port=80)
+
