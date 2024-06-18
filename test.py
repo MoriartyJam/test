@@ -197,8 +197,8 @@ def index():
                 font-size: 3em;
             }
             button {
-                padding: 20px 40px;
-                font-size: 2em;
+                padding: 10px;
+                font-size: 1.5em;
                 cursor: pointer;
                 background-color: #4CAF50;
                 color: white;
@@ -210,8 +210,8 @@ def index():
                 background-color: #45a049;
             }
             #status img {
-                width: 150px;
-                height: 150px;
+                width: 200px;
+                height: 200px;
             }
             #status {
                 padding-top: 20px;
@@ -225,8 +225,8 @@ def index():
                     font-size: 1.5em;
                 }
                 #status img {
-                    width: 100px;
-                    height: 100px;
+                    width: 150px;
+                    height: 150px;
                 }
             }
         </style>
