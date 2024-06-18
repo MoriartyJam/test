@@ -210,8 +210,8 @@ def index():
                 background-color: #45a049;
             }
             #status img {
-                width: 200px;
-                height: 250px;
+                width: 250px;
+                height: 200px;
             }
             #status {
                 padding-top: 20px;
@@ -225,8 +225,8 @@ def index():
                     font-size: 1.5em;
                 }
                 #status img {
-                    width: 150px;
-                    height: 250px;
+                    width: 250px;
+                    height: 150px;
                 }
             }
         </style>
