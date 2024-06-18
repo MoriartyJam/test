@@ -194,27 +194,40 @@ def index():
             }
             h1 {
                 margin-bottom: 20px;
+                font-size: 3em;
             }
             button {
-                padding: 10px 20px;
-                font-size: 16px;
+                padding: 20px 40px;
+                font-size: 2em;
                 cursor: pointer;
                 background-color: #4CAF50;
                 color: white;
                 border: none;
-                border-radius: 5px;
+                border-radius: 10px;
                 transition: background-color 0.3s ease;
             }
             button:hover {
                 background-color: #45a049;
             }
             #status img {
-                width: 250px;
+                width: 150px;
                 height: 150px;
             }
-
             #status {
-                padding-top: 10px
+                padding-top: 20px;
+            }
+            @media (max-width: 600px) {
+                h1 {
+                    font-size: 2em;
+                }
+                button {
+                    padding: 15px 30px;
+                    font-size: 1.5em;
+                }
+                #status img {
+                    width: 100px;
+                    height: 100px;
+                }
             }
         </style>
         <div class="container">
@@ -244,4 +257,3 @@ def index():
 
 if __name__ == "__main__":
     app.run(debug=True, host='0.0.0.0', port=80)
-
