@@ -211,7 +211,7 @@ def index():
             }
             #status img {
                 width: 200px;
-                height: 200px;
+                height: 250px;
             }
             #status {
                 padding-top: 20px;
@@ -226,7 +226,7 @@ def index():
                 }
                 #status img {
                     width: 150px;
-                    height: 150px;
+                    height: 250px;
                 }
             }
         </style>
